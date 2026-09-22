@@ -14,13 +14,13 @@ An organized academic archive of course notes, term tests, model solutions, and 
 
 ## Curriculum Overview (Semester 1-1)
 
-| Course Code | Course Title | Credits | Status | Notes & Handbooks | Exam Papers & Solutions |
+| Course Code | Course Title | Credits | Archive Coverage | Notes & Handbooks | Exam Papers & Solutions |
 | :--- | :--- | :---: | :---: | :--- | :--- |
-| **CSE 1143** | **Discrete Mathematics** | 3.00 | Complete | • [Sets, Relations & Functions (PDF)](https://github.com/cyanoge1-netizen/sec-cse-semester-archive/releases/latest/download/CSE-1143_03_Sets_Relations_Functions.pdf)<br>• [Propositional Logic (PDF)](https://github.com/cyanoge1-netizen/sec-cse-semester-archive/releases/latest/download/CSE-1143_01_Propositional_Logic.pdf) | • [TT-01 Questions & Solutions](semester_1-1/CSE-1143_Discrete_Mathematics/tt-01/)<br>• [PYQ Archive (PDF)](https://github.com/cyanoge1-netizen/sec-cse-semester-archive/releases/latest/download/CSE-1143_PYQ_Archive.pdf) |
-| **CSE 1133** | **Structured Programming** | 3.00 | In Progress | *In preparation* | [PYQ Archive](semester_1-1/CSE-1133_Structured_Programming/pyq_archive/) |
-| **EEE 1109** | **Electrical Engineering** | 3.00 | Planned | *In preparation* | [PYQ Archive](semester_1-1/EEE-1109_Electrical_Engineering/pyq_archive/) |
-| **MATH 1101** | **Linear Algebra & Geometry** | 3.00 | Planned | *In preparation* | [PYQ Archive](semester_1-1/MATH-1101_Coordinate_Geometry_Linear_Algebra/pyq_archive/) |
-| **PHY 1101** | **Physics** | 3.00 | Planned | *In preparation* | [PYQ Archive](semester_1-1/PHY-1101_Physics/pyq_archive/) |
+| **CSE 1143** | **Discrete Mathematics** | 3.00 | 🟡 In Progress *(Modules 1–2, TT-01, PYQs)* | • [Sets, Relations & Functions (PDF)](https://github.com/cyanoge1-netizen/sec-cse-semester-archive/releases/latest/download/CSE-1143_03_Sets_Relations_Functions.pdf)<br>• [Propositional Logic (PDF)](https://github.com/cyanoge1-netizen/sec-cse-semester-archive/releases/latest/download/CSE-1143_01_Propositional_Logic.pdf) | • [TT-01 Questions & Solutions](semester_1-1/CSE-1143_Discrete_Mathematics/tt-01/)<br>• [PYQ Archive (PDF)](https://github.com/cyanoge1-netizen/sec-cse-semester-archive/releases/latest/download/CSE-1143_PYQ_Archive.pdf) |
+| **CSE 1133** | **Structured Programming** | 3.00 | ⚪ Upcoming | *In preparation* | [PYQ Archive](semester_1-1/CSE-1133_Structured_Programming/pyq_archive/) |
+| **EEE 1109** | **Electrical Engineering** | 3.00 | ⚪ Upcoming | *In preparation* | [PYQ Archive](semester_1-1/EEE-1109_Electrical_Engineering/pyq_archive/) |
+| **MATH 1101** | **Linear Algebra & Geometry** | 3.00 | ⚪ Upcoming | *In preparation* | [PYQ Archive](semester_1-1/MATH-1101_Coordinate_Geometry_Linear_Algebra/pyq_archive/) |
+| **PHY 1101** | **Physics** | 3.00 | ⚪ Upcoming | *In preparation* | [PYQ Archive](semester_1-1/PHY-1101_Physics/pyq_archive/) |
 
 ---
 
