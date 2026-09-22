@@ -35,8 +35,6 @@ Download precompiled, ready-to-read PDFs from the [Latest Release](https://githu
   - [CSE 1143 Master PYQ Archive (PDF)](https://github.com/cyanoge1-netizen/sec-cse-semester-archive/releases/latest/download/CSE-1143_PYQ_Archive.pdf)
   - [Term Test 01 (TT-01) Question Paper (PDF)](https://github.com/cyanoge1-netizen/sec-cse-semester-archive/releases/latest/download/CSE-1143_TT01_Question_Paper.pdf)
   - [Term Test 01 (TT-01) Model Solutions (PDF)](https://github.com/cyanoge1-netizen/sec-cse-semester-archive/releases/latest/download/CSE-1143_TT01_Solutions.pdf)
-- **Course Bundle:**
-  - [Download All Discrete Mathematics PDFs (ZIP)](https://github.com/cyanoge1-netizen/sec-cse-semester-archive/releases/latest/download/CSE-1143_Discrete_Mathematics_Bundle.zip)
 
 ---
 
