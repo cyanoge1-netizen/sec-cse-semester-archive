@@ -1,0 +1,17 @@
+# LaTeX auxiliary / build files
+*.aux
+*.log
+*.toc
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,230 @@
+\PassOptionsToPackage{table}{xcolor}
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{pro_note}
+
+% ==============================================================================
+% METADATA CONFIGURATION
+% ==============================================================================
+\setCourseInfo{CSE 1143}{Discrete Mathematics}{TT-01 Model Solutions}
+\setAuthorName{Suleman Ahmed Shuvo}
+
+\begin{document}
+
+% ==============================================================================
+% 1. PUBLICATION COVER PAGE
+% ==============================================================================
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture, overlay]
+  % Left side vertical color bands
+  \fill[navy] (current page.north west) rectangle ($(current page.south west)+(1.2cm, 0)$);
+  \fill[teal] ($(current page.north west)+(1.2cm, 0)$) rectangle ($(current page.south west)+(1.5cm, 0)$);
+  \fill[gold] ($(current page.north west)+(1.5cm, 0)$) rectangle ($(current page.south west)+(1.65cm, 0)$);
+  
+  % Top-right decorative geometric corner
+  \fill[lightteal, opacity=0.5] ($(current page.north east)+(-6cm, 0)$) -- (current page.north east) -- ($(current page.north east)+(0, -4cm)$) -- cycle;
+\end{tikzpicture}
+
+\vspace*{0.8cm}
+\begin{flushleft}
+\hspace*{0.8cm}
+\begin{minipage}{0.88\textwidth}
+  {\color{teal}\bfseries\small\MakeUppercase{Tutorial Test Examination Series}}\\[0.6cm]
+  {\color{navy}\bfseries\fontsize{26}{32}\selectfont Term Test-01: Model Solutions \& Rigorous Analysis}
+  
+  \vspace{1.5cm}
+  
+  % Center concept motif diagram (TikZ)
+  \begin{center}
+  \begin{tikzpicture}[scale=1.1, >=Stealth]
+    % Poset Hasse Diagram for Divisibility on {1, 2, 3, 4}
+    \node[circle, draw=navy, fill=lightteal, thick, inner sep=4pt, font=\bfseries\normalsize] (n1) at (0, 0) {$1$};
+    \node[circle, draw=teal, fill=lightgold, thick, inner sep=4pt, font=\bfseries\normalsize] (n2) at (-1.5, 1.6) {$2$};
+    \node[circle, draw=teal, fill=lightgold, thick, inner sep=4pt, font=\bfseries\normalsize] (n3) at (1.5, 1.6) {$3$};
+    \node[circle, draw=navy, fill=lightteal, thick, inner sep=4pt, font=\bfseries\normalsize] (n4) at (-1.5, 3.2) {$4$};
+    
+    % Poset edges
+    \draw[->, ultra thick, navy] (n1) -- node[left, font=\bfseries\scriptsize] {$1 \mid 2$} (n2);
+    \draw[->, ultra thick, teal] (n1) -- node[right, font=\bfseries\scriptsize] {$1 \mid 3$} (n3);
+    \draw[->, ultra thick, navy] (n2) -- node[left, font=\bfseries\scriptsize] {$2 \mid 4$} (n4);
+    
+    % Implication badge
+    \node[draw=gold!90!black, fill=lightgold, rounded corners=3pt, font=\bfseries\scriptsize, inner sep=4pt] at (1.8, 0.4) {$(p \to q) \wedge \neg q \ \implies \ \neg p$};
+    \node[draw=navy!80, fill=white, rounded corners=3pt, font=\bfseries\scriptsize, inner sep=4pt] at (1.8, 2.8) {Poset: $(A, \mid)$};
+  \end{tikzpicture}
+  \end{center}
+  
+  \vspace{1.3cm}
+  
+  % Signature Metadata Card
+  \makeMetadataCard
+    {Suleman Ahmed Shuvo}
+    {Roll: 43 \ $\bullet$ \ Batch: CSE-19 \ $\bullet$ \ Session: 2025--2026}
+    {CSE 0541 1143: Discrete Mathematics (3.00 Credits)}
+    {Sylhet Engineering College (SEC)}
+    {Affiliated with Shahjalal University of Science \& Technology (SUST)}
+\end{minipage}
+\end{flushleft}
+\end{titlepage}
+
+% ==============================================================================
+% 2. EXAM OVERVIEW & SYLLABUS MAPPING
+% ==============================================================================
+\newpage
+\begin{syllabusbox}[$\bigstar$ SEC TT-01 Official Exam Specification]{Exam Date: September 2026 $\bullet$ Full Marks: 10}
+\textbf{Course Code:} CSE 0541 1143 $\bullet$ \textbf{Course Title:} Discrete Mathematics\\
+\textbf{Curriculum Focus:} \textit{Propositional Logic (Definitions, Truth Tables) and Set Relations (Cartesian Divisibility, Reflexivity, Symmetry, Antisymmetry, Transitivity).}
+\end{syllabusbox}
+
+\vspace{2pt}
+
+% ==============================================================================
+% 3. QUESTION 01: PROPOSITIONAL LOGIC
+% ==============================================================================
+\section{Question 01: Propositional Logic}
+
+\begin{exambox}[before skip=3pt, after skip=6pt]{SEC Term Test-01 --- Question 01 (a) \hfill [03 Marks]}
+\Qlabel
+Define a \textbf{proposition} and determine whether each of the following is a proposition. Give reasons.
+\begin{enumerate}[label=\roman*), topsep=1pt, itemsep=1pt, parsep=0pt]
+    \item $x + 5 = 10$
+    \item Dhaka is the capital of Bangladesh.
+\end{enumerate}
+
+\tcblower
+
+\Alabel
+\textbf{1. Formal Definition of a Proposition:}
+A \textbf{proposition} is a declarative sentence that is either strictly \textbf{True ($\mathbf{T}$)} or strictly \textbf{False ($\mathbf{F}$)}, but not both simultaneously.
+
+\smallskip
+\textbf{2. Analysis of the Given Statements:}
+
+\begin{itemize}[leftmargin=1.5em, topsep=1pt, itemsep=2pt, parsep=0pt]
+    \item \textbf{Statement (i):} $x + 5 = 10$
+    \begin{itemize}[topsep=1pt, itemsep=1pt]
+        \item \textbf{Verdict:} \textbf{\color{coral}Not a proposition.}
+        \item \textbf{Mathematical Reason:} This statement contains a free variable $x$. Its truth value is indeterminate without context ($x=5 \implies \mathbf{T}$, $x \neq 5 \implies \mathbf{F}$). Because its truth value is not fixed, it is an \textbf{open sentence} (or \textit{predicate} $P(x)$).
+    \end{itemize}
+    
+    \item \textbf{Statement (ii):} \textit{``Dhaka is the capital of Bangladesh.''}
+    \begin{itemize}[topsep=1pt, itemsep=1pt]
+        \item \textbf{Verdict:} \textbf{\color{teal}It is a proposition.}
+        \item \textbf{Mathematical Reason:} It is a declarative factual assertion. Since Dhaka is indeed the capital of Bangladesh, its truth value is uniquely and definitively \textbf{True ($\mathbf{T}$)}.
+    \end{itemize}
+\end{itemize}
+\end{exambox}
+
+\vspace{2pt}
+
+\begin{exambox}[before skip=3pt, after skip=3pt]{SEC Term Test-01 --- Question 01 (b) \hfill [02 Marks]}
+\Qlabel
+Construct the truth table for the compound proposition:
+$
+(p \to q) \wedge \neg q
+$
+
+\tcblower
+
+\Alabel
+Since the expression contains 2 propositional variables ($p, q$), there are $2^2 = 4$ truth assignments:
+
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{cc|c|c|c}
+\toprule
+\rowcolor{navy!15}
+\textbf{\color{navy}$p$} & \textbf{\color{navy}$q$} & \textbf{\color{navy}$p \to q$} & \textbf{\color{navy}$\neg q$} & \textbf{\color{navy}$(p \to q) \wedge \neg q$} \\
+\midrule
+$\mathbf{T}$ & $\mathbf{T}$ & $\mathbf{T}$ & $\mathbf{F}$ & $\mathbf{F}$ \\
+$\mathbf{T}$ & $\mathbf{F}$ & $\mathbf{F}$ & $\mathbf{T}$ & $\mathbf{F}$ \\
+$\mathbf{F}$ & $\mathbf{T}$ & $\mathbf{T}$ & $\mathbf{F}$ & $\mathbf{F}$ \\
+\rowcolor{lightteal!60}
+$\mathbf{F}$ & $\mathbf{F}$ & $\mathbf{T}$ & $\mathbf{T}$ & $\mathbf{T}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{-2pt}
+\textbf{Conclusion:}
+The proposition $(p \to q) \wedge \neg q$ is \textbf{True} if and only if both $p$ and $q$ are \textbf{False}. 
+*(This compound form serves as the antecedent of \textbf{Modus Tollens}: $[(p \to q) \wedge \neg q] \implies \neg p$)*.
+\end{exambox}
+
+\newpage
+
+% ==============================================================================
+% 4. QUESTION 02: RELATIONS ON A SET
+% ==============================================================================
+\section{Question 02: Relations on a Set}
+
+\begin{exambox}[before skip=3pt, after skip=6pt]{SEC Term Test-01 --- Question 02 (a) \hfill [02 Marks]}
+\Qlabel
+Let $A = \{1, 2, 3, 4\}$ and relation $R$ on $A$ defined by:
+$
+R = \{(a, b) \in A \times A \mid a \text{ divides } b\}.
+$
+Write the relation $R$ explicitly as a set of ordered pairs.
+
+\tcblower
+
+\Alabel
+$a \text{ divides } b$ (denoted $a \mid b$) implies $b = k \cdot a$ for some integer $k \ge 1$ ($b \pmod{a} = 0$). Evaluating all pairs $(a, b) \in A \times A$:
+\begin{itemize}[leftmargin=1.5em, topsep=1pt, itemsep=1pt, parsep=0pt]
+    \item $a = 1$: $1 \mid 1, 2, 3, 4 \implies (1, 1), (1, 2), (1, 3), (1, 4)$.
+    \item $a = 2$: $2 \mid 2, 4 \implies (2, 2), (2, 4)$.
+    \item $a = 3$: $3 \mid 3 \implies (3, 3)$.
+    \item $a = 4$: $4 \mid 4 \implies (4, 4)$.
+\end{itemize}
+
+\smallskip
+Expressing $R$ explicitly as a set of ordered pairs:
+\[
+\mathbf{R = \big\{ (1, 1), (1, 2), (1, 3), (1, 4), (2, 2), (2, 4), (3, 3), (4, 4) \big\}}
+\]
+The relation $R$ contains exactly \textbf{8 ordered pairs} out of $|A \times A| = 16$.
+\end{exambox}
+
+\vspace{2pt}
+
+\begin{exambox}[before skip=3pt, after skip=3pt]{SEC Term Test-01 --- Question 02 (b) \hfill [03 Marks]}
+\Qlabel
+Determine whether $R$ is \textbf{reflexive}, \textbf{symmetric}, \textbf{antisymmetric}, and \textbf{transitive}. Provide a brief justification for each property.
+
+\tcblower
+
+\Alabel
+We evaluate each of the four fundamental relational properties on $A = \{1, 2, 3, 4\}$:
+
+\begin{enumerate}[label=\textbf{\arabic*.}, topsep=1pt, itemsep=2pt, parsep=0pt]
+    \item \textbf{Reflexivity:} \textbf{\color{teal}Yes, $R$ is Reflexive.}
+    \begin{itemize}[topsep=1pt, itemsep=1pt]
+        \item \textit{Justification:} $\forall x \in A, \ (x, x) \in R$ because every non-zero integer divides itself ($x \mid x$). Since $(1, 1), (2, 2), (3, 3), (4, 4) \in R$, reflexivity holds.
+    \end{itemize}
+
+    \item \textbf{Symmetry:} \textbf{\color{coral}No, $R$ is NOT Symmetric.}
+    \begin{itemize}[topsep=1pt, itemsep=1pt]
+        \item \textit{Justification:} $\exists x, y \in A$ such that $(x, y) \in R$ but $(y, x) \notin R$.
+        \item \textit{Counter-example:} $(1, 2) \in R$ (as $1 \mid 2$), but $(2, 1) \notin R$ (as $2 \nmid 1$).
+    \end{itemize}
+
+    \item \textbf{Antisymmetry:} \textbf{\color{teal}Yes, $R$ is Antisymmetric.}
+    \begin{itemize}[topsep=1pt, itemsep=1pt]
+        \item \textit{Justification:} $\forall x, y \in A, \ [(x, y) \in R \ \wedge \ (y, x) \in R] \implies x = y$. For positive integers, $a \mid b \land b \mid a \implies a = b$. In $R$, the only mutually related elements are diagonal pairs $(x, x)$.
+    \end{itemize}
+
+    \item \textbf{Transitivity:} \textbf{\color{teal}Yes, $R$ is Transitive.}
+    \begin{itemize}[topsep=1pt, itemsep=1pt]
+        \item \textit{Justification:} $\forall x, y, z \in A, \ [(x, y) \in R \ \wedge \ (y, z) \in R] \implies (x, z) \in R$. If $a \mid b$ and $b \mid c$, then $a \mid c$. Specifically, $(1, 2) \in R \land (2, 4) \in R \implies (1, 4) \in R$.
+    \end{itemize}
+\end{enumerate}
+
+\smallskip
+\begin{notebox}[Academic Classification]
+Because $R$ is \textbf{reflexive}, \textbf{antisymmetric}, and \textbf{transitive}, $(A, R)$ constitutes a \textbf{Partially Ordered Set (Poset)}.
+\end{notebox}
+\end{exambox}
+
+\end{document}
