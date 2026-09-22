@@ -38,9 +38,9 @@ $$R = \{(a, b) \in A \times A \mid a \text{ divides } b\}$$
 
 ## Documents & Source Files
 
-| File | Description |
-| :--- | :--- |
-| [question_paper.pdf](question_paper.pdf) | Printable PDF of the question paper |
-| [question_paper.tex](question_paper.tex) | XeLaTeX source of the question paper |
-| [solutions.pdf](solutions.pdf) | Step-by-step model solutions PDF |
-| [solutions.tex](solutions.tex) | XeLaTeX source of the model solutions |
+| Item | Description | Link |
+| :--- | :--- | :--- |
+| **Question Paper (PDF)** | Printable PDF of the question paper | [Download PDF](https://github.com/cyanoge1-netizen/sec-cse-semester-archive/releases/latest/download/CSE-1143_TT01_Question_Paper.pdf) |
+| **Model Solutions (PDF)** | Step-by-step model solutions PDF | [Download PDF](https://github.com/cyanoge1-netizen/sec-cse-semester-archive/releases/latest/download/CSE-1143_TT01_Solutions.pdf) |
+| **Question Paper (LaTeX)** | XeLaTeX source of the question paper | [question_paper.tex](question_paper.tex) |
+| **Model Solutions (LaTeX)** | XeLaTeX source of the model solutions | [solutions.tex](solutions.tex) |

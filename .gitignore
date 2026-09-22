@@ -1,3 +1,6 @@
+# Compiled PDF documents (distributed via GitHub Releases)
+*.pdf
+
 # LaTeX auxiliary / build files
 *.aux
 *.log
